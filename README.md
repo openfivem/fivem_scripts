@@ -12,7 +12,7 @@
 * Nothing that breaks github TOS / FiveM TOS
 * Any questions regarding this should take place at https://discord.gg/jU7GpJtuvC
 * Follow file format (Look below). Will be verified in the PR either way but less work for urself
-* You can create a template resource with the creator.py file :)
+* You can create a template resource with the `resource.py` file :), simply run it in the folder you want or enter any path
 
 
 ![Image of Yaktocat](https://cdn.discordapp.com/attachments/872206545713246228/873218069546295326/95182c2732b9ca9bdf6ce5a3b10f9f27.png)
