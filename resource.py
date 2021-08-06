@@ -8,15 +8,13 @@ if path == "":
 
 
 def create_folder(path,foldername):
-    folderpath = os.path.join(path,foldername)
     try:
-        os.mkdir(folderpath)
+        os.mkdir(os.path.join(path,foldername))
     except OSError as error:
         print(error)
 
 def writefile(path,folder,filename):
-    fileDir = os.path.join(path,folder)
-    f = open(os.path.join(fileDir,filename),"w")
+    f = open(os.path.join(os.path.join(path,folder),filename),"w")
     print(f"{filename} created")
 
 folders = ["client","server","cfg","html"]
@@ -30,13 +28,10 @@ writefile(path,"client","cl_main.lua")
 writefile(path,"server","sv_main.lua")
 writefile(path,"cfg","cfg_main.lua")
 
-filepath = os.path.join(path,"html")
 for file in html_files:
-    fileDir = os.path.join(filepath,file)
-    f = open(fileDir,"w")
+    f = open(os.path.join(os.path.join(path,"html"),file),"w")
     print(f"{file} created")
-fileDir = os.path.join(filepath,"index.html")
-html = open(fileDir,"w")
+html = open(os.path.join(os.path.join(path,"html"),"index.html"),"w")
 html.write("""<!DOCTYPE html>\n<html lang="en">\n<head>\n    <link rel="stylesheet" href="styles.css">\n    <title>uh oh swag time</title>\n</head>\n<body>\n    \n</body>\n<script src="script.js"></script>\n</html>""")
 html.close()
 print("index.html created")
