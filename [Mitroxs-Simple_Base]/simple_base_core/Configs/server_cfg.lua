@@ -6,10 +6,14 @@ ServerCFG.Worlds = {}
 
 
 
+
 ServerCFG.Discord_Webhooks = {
+    ['user_name'] = 'Change me',
+    ['image_url'] = 'change me',
     ['user_left'] = 'webhookhere',
     ['dev_logs'] = 'webhookhere',
 }
+
 
 
 
